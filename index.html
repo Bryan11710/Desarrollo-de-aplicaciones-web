@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 3 - Etiquetas Semánticas HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1> Proyecto de Práctica HTML5: Estructura Semántica</h1>
+        <h2>Desarrollo Web Básico con Etiquetas HTML5</h2>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#contenido">Contenido Principal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h3>Introducción a las Etiquetas Semánticas</h3>
+            <p>
+                Las etiquetas semánticas en HTML5, como <strong>header</strong>, <em>nav</em>, y <strong>footer</strong>, son cruciales.
+                No solo estructuran el contenido, sino que también mejoran la accesibilidad y el SEO.
+            </p>
+            
+            <figure>
+                <img src="assets/img/imagen.jpg" alt="Descripción de un código de programación">
+                <figcaption>Ejemplo de código bien estructurado.</figcaption>
+            </figure>
+
+            <h4>Ventajas de usar Semántica</h4>
+            <ul>
+                <li>Mejor accesibilidad para lectores de pantalla.</li>
+                <li>Mayor claridad para otros desarrolladores.</li>
+                <li>Optimización para motores de búsqueda (SEO).</li>
+            </ul>
+
+        </section>
+
+        <article id="contenido">
+            <h3>Elementos de Contenido Multimedia y Listas</h3>
+            
+            <h4>Video Explicativo</h4>
+            <video controls width="100%">
+                <source src="assets/video/video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            
+            <h4>Pasos para la Publicación en GitHub Pages</h4>
+            <ol>
+                <li>Crear el repositorio público en GitHub.</li>
+                <li>Subir todos los archivos (incluyendo assets/).</li>
+                <li>Habilitar GitHub Pages desde la configuración del repositorio.</li>
+            </ol>
+
+            <p>
+                Para más información sobre HTML5, visita el <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">sitio de MDN Web Docs</a>.
+            </p>
+        </article>
+
+        <section>
+            <h3>Tabla de Avance del Proyecto</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Requisito</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Estructura Semántica</th>
+                        <td>Completado</td>
+                    </tr>
+                    <tr>
+                        <th>Multimedia y Listas</th>
+                        <td>Completado</td>
+                    </tr>
+                    <tr>
+                        <th>Publicación en GitHub</th>
+                        <td>Pendiente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h3>Formulario de Contacto</h3>
+            <form action="#" method="POST" class="contacto-form">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <button type="submit">Enviar Formulario</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Nombre del Estudiante | Proyecto Semana 3</p>
+    </footer>
+
+</body>
+</html>
