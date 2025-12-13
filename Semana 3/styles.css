@@ -1,0 +1,132 @@
+/*
+====================================
+1. Variables y Reset Básico
+====================================
+*/
+:root {
+    /* Paleta de Colores Solicitada */
+    --color-principal: #FFD700; /* Dorado (Gold) */
+    --color-secundario: #FFFFFF; /* Blanco Puro */
+    --color-fondo: #1C1C1C; /* Fondo Oscuro para hacer destacar el Dorado */
+    --color-texto: #E0E0E0; /* Texto Claro */
+    
+    /* Tipografía (Formato de Letra) */
+    --fuente-principal: 'Arial', sans-serif; /* Puedes cambiar 'Arial' por otra fuente si deseas */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/*
+====================================
+2. Contenedores y Layout
+====================================
+*/
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*
+====================================
+3. Header y Navegación
+====================================
+*/
+header {
+    background-color: var(--color-principal); 
+    color: var(--color-fondo); 
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 5px solid var(--color-secundario); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-fondo); 
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-secundario); 
+}
+
+/*
+====================================
+4. Contenido Principal y Formatos de Texto
+====================================
+*/
+h2 {
+    color: var(--color-principal); 
+    border-bottom: 2px solid var(--color-texto);
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    /* Aplicación de formato de texto simple, puedes añadir 'font-weight: 300' si usas una fuente compatible */
+}
+
+aside {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 30px;
+    border-left: 5px solid var(--color-principal); 
+}
+
+/*
+====================================
+5. Multimedia (Imagen y Video)
+====================================
+*/
+img, video {
+    max-width: 800px; /* Tamaño Máximo para el Video/Imagen */
+    height: auto;
+    display: block; 
+    margin: 20px auto; /* Centrado y margen */
+    border: 3px solid var(--color-principal); 
+    border-radius: 5px;
+}
+
+figcaption {
+    color: var(--color-texto);
+    padding: 10px 0;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/*
+====================================
+6. Pie de Página (Footer)
+====================================
+*/
+footer {
+    background-color: var(--color-principal); 
+    color: var(--color-fondo); 
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: var(--color-fondo);
+    font-weight: bold;
+}
