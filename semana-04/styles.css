@@ -1,0 +1,46 @@
+/* 1. Personalización del Botón Primario (Naranja) */
+.btn-primary {
+    background-color: #ff5733 !important;
+    border-color: #ff5733 !important;
+    transition: all 0.4s ease; /* Transición suave solicitada */
+}
+
+/* Animación :hover para botones */
+.btn-primary:hover {
+    background-color: #e64a19 !important;
+    transform: scale(1.05); /* Efecto de crecimiento */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 2. Modelo de Cajas y Animación para las Cards */
+.custom-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* Sube la card al pasar el mouse */
+}
+
+/* 3. Media Query personalizada para pantallas pequeñas */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+        color: #ff5733; /* El título cambia de color en móviles */
+    }
+    
+    body {
+        background-color: #f8f9fa;
+    }
+}
+
+/* 4. Animación de entrada con Keyframes */
+header {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
