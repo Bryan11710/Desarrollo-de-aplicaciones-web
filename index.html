@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solución Web Profesional - Semana 04">
+    <title>Enterprise Architecture | Bootstrap 5</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fa-solid fa-microchip me-2 text-primary-custom"></i>
+                <span class="fw-bold">Tarea: Semana 04: Creación de una Página Web con CSS3 y Bootstrap</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#services">Arquitectura</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-3 px-4" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-gradient py-5">
+        <div class="container py-5 text-center">
+            <h1 class="display-3 fw-bold mb-3 animate-up">Sistemas de Próxima Generación</h1>
+            <p class="lead opacity-75 mb-4 mx-auto" style="max-width: 700px;">
+                Implementación de interfaces responsivas con alto rendimiento, optimizadas mediante Bootstrap 5 y CSS3 avanzado.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#services" class="btn btn-primary-custom btn-lg shadow">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-outline-dark btn-lg">Saber más</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold h1">Marco de Arquitectura</h2>
+            <div class="mx-auto bg-primary-custom" style="width: 60px; height: 4px; border-radius: 2px;"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-hover card-glass">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/imagen1.jpg" class="card-img-top zoom-effect" alt="Escalabilidad">
+                    </div>
+                    <div class="card-body p-4">
+                        <i class="fa-solid fa-layer-group fa-2x text-primary-custom mb-3"></i>
+                        <h3 class="h4 fw-bold">Escalabilidad</h3>
+                        <p class="text-muted">Utilización del sistema Grid de 12 columnas para adaptabilidad total de la UI.</p>
+                        <button class="btn btn-link text-decoration-none p-0 fw-bold text-primary-custom" data-bs-toggle="collapse" data-bs-target="#desc1">
+                            Detalles <i class="fa-solid fa-chevron-down ms-1"></i>
+                        </button>
+                        <div class="collapse mt-3" id="desc1">
+                            <p class="small bg-light p-3 rounded border">Configuración basada en breakpoints "md" para visualización equilibrada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-hover card-glass">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/imagen1.jpg" class="card-img-top zoom-effect" alt="Componentes">
+                    </div>
+                    <div class="card-body p-4">
+                        <i class="fa-solid fa-cubes fa-2x text-primary-custom mb-3"></i>
+                        <h3 class="h4 fw-bold">Componentes</h3>
+                        <p class="text-muted">Implementación de Buttons, Navbars y Forms estilizados con CSS personalizado.</p>
+                        <button class="btn btn-link text-decoration-none p-0 fw-bold text-primary-custom" data-bs-toggle="collapse" data-bs-target="#desc2">
+                            Detalles <i class="fa-solid fa-chevron-down ms-1"></i>
+                        </button>
+                        <div class="collapse mt-3" id="desc2">
+                            <p class="small bg-light p-3 rounded border">Uso de clases de utilidad de Bootstrap para espaciado semántico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-hover card-glass">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/imagen1.jpg" class="card-img-top zoom-effect" alt="Responsivo">
+                    </div>
+                    <div class="card-body p-4">
+                        <i class="fa-solid fa-mobile-screen-button fa-2x text-primary-custom mb-3"></i>
+                        <h3 class="h4 fw-bold">Multi-dispositivo</h3>
+                        <p class="text-muted">Optimización fluida para dispositivos móviles mediante Media Queries avanzadas.</p>
+                        <button class="btn btn-link text-decoration-none p-0 fw-bold text-primary-custom" data-bs-toggle="collapse" data-bs-target="#desc3">
+                            Detalles <i class="fa-solid fa-chevron-down ms-1"></i>
+                        </button>
+                        <div class="collapse mt-3" id="desc3">
+                            <p class="small bg-light p-3 rounded border">Compatibilidad cross-browser garantizada en tablets y smartphones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4">Construyamos el futuro.</h2>
+                    <p class="opacity-50">Completa el formulario para desplegar una consulta técnica. Recibirás una respuesta en tu bandeja de entrada.</p>
+                </div>
+                <div class="col-lg-7">
+                    <form action="https://formspree.io/f/TU_ID_AQUÍ" method="POST" class="bg-white text-dark p-4 p-md-5 rounded-4 shadow">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold small">Nombre Completo</label>
+                                <input type="text" name="nombre" class="form-control bg-light border-0" placeholder="Ej. Bryan Córdova" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold small">Correo Electrónico</label>
+                                <input type="email" name="email" class="form-control bg-light border-0" placeholder="bryancor89@empresa.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-bold small">Mensaje o Comentarios</label>
+                            <textarea name="mensaje" class="form-control bg-light border-0" rows="4" placeholder="Describe tu requerimiento..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom btn-lg w-100 shadow">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center border-top bg-white">
+        <p class="text-muted small mb-0">© 2024 TECH_OS Architecture. Designed for Enterprise Scalability.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
