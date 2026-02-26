@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="titulo-grande">INVENTARIO DE EQUIPOS</h1>
+    <p>Consulta y gestiona el stock disponible en tiempo real.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th><strong>MARCA</strong></th>
+                <th><strong>MODELO</strong></th>
+                <th><strong>STOCK</strong></th>
+                <th><strong>PRECIO</strong></th>
+                <th><strong>ACCIÓN</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for equipo in equipos %}
+            <tr>
+                <td>{{ equipo.marca }}</td>
+                <td>{{ equipo.nombre }}</td>
+                <td>{{ equipo.cantidad }}</td>
+                <td>${{ equipo.precio }}</td>
+                <td>
+                    <a href="/eliminar/{{ equipo.id }}" style="color: #ff3b30; text-decoration: none;">
+                        <strong>ELIMINAR</strong>
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div style="margin-top: 30px;">
+        <a href="/agregar" class="btn">AGREGAR NUEVO EQUIPO</a>
+    </div>
+</div>
+{% endblock %}
