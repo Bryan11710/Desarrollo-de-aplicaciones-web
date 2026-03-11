@@ -10,16 +10,15 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #ffffff; /* Blanco total */
+            background-color: #ffffff;
             color: #111111;
             margin: 0;
             padding: 0;
         }
 
-        /* Navegación ultra minimalista */
         .navbar {
             background-color: #ffffff !important;
-            border-bottom: 1px solid #eaeaea; /* Línea muy fina */
+            border-bottom: 1px solid #eaeaea;
             padding: 20px 0;
         }
 
@@ -42,9 +41,9 @@
             color: #000 !important;
         }
 
-        /* El botón de registros ahora es un link elegante */
-        .nav-logs {
-            color: #007bff !important; /* Un toque de azul solo aquí */
+        /* Estilo para el link de Usuarios (Semana 13) */
+        .nav-users {
+            color: #007bff !important; 
             font-weight: 500;
         }
 
@@ -52,7 +51,6 @@
             margin-top: 60px;
         }
 
-        /* Footer discreto */
         footer {
             margin-top: 100px;
             padding: 40px 0;
@@ -62,7 +60,6 @@
             text-align: center;
         }
 
-        /* Quitar sombras y bordes feos de las tablas/cuadros que vengan de otros archivos */
         .card, .table {
             border: 1px solid #eee !important;
             box-shadow: none !important;
@@ -92,7 +89,7 @@
                         <a class="nav-link" href="{{ url_for('agregar_equipo') }}">Añadir</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-logs" href="{{ url_for('ver_archivos') }}">Registros</a>
+                        <a class="nav-link nav-users" href="{{ url_for('gestionar_usuarios') }}">Usuarios</a>
                     </li>
                 </ul>
             </div>

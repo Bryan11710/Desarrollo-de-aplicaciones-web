@@ -1,0 +1,1 @@
+Marca: SAMSUNG, Modelo: A54, Cantidad: 10, Precio: 600.0

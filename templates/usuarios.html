@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <div class="p-4 border rounded-4 shadow-sm bg-white">
+            <h3 class="fw-bold mb-4 text-center">Nuevo Usuario</h3>
+            <form action="{{ url_for('gestionar_usuarios') }}" method="POST">
+                <div class="mb-3">
+                    <label class="form-label small text-muted">Nombre Completo</label>
+                    <input type="text" name="nombre" class="form-control bg-light border-0 shadow-none" placeholder="Ej: Juan Pérez" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small text-muted">Correo Electrónico</label>
+                    <input type="email" name="mail" class="form-control bg-light border-0 shadow-none" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small text-muted">Contraseña</label>
+                    <input type="password" name="password" class="form-control bg-light border-0 shadow-none" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 rounded-pill mt-3">Registrar Usuario</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="p-4">
+            <h3 class="fw-bold mb-4">Usuarios del Sistema</h3>
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="border-0">ID</th>
+                            <th class="border-0">Nombre</th>
+                            <th class="border-0">Email</th>
+                            <th class="border-0">Contraseña (Hash)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for usuario in usuarios %}
+                        <tr>
+                            <td class="text-muted small">#{{ usuario.id_usuario }}</td>
+                            <td class="fw-medium">{{ usuario.nombre }}</td>
+                            <td>{{ usuario.mail }}</td>
+                            <td class="text-muted small">********</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
