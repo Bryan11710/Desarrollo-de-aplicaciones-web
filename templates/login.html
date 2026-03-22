@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center" style="margin-top: 50px;">
+    <div class="col-md-4">
+        <div class="card p-4 border-0 shadow-sm" style="border-radius: 15px; background-color: #ffffff; border: 1px solid #eee !important;">
+            <h3 class="fw-bold mb-4 text-center" style="letter-spacing: -1px;">TechNova Login</h3>
+            
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                  <div class="alert alert-danger border-0 small py-2">{{ message }}</div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+
+            <form method="POST">
+                <div class="mb-3">
+                    <label class="form-label small text-muted">Correo Electrónico</label>
+                    <input type="email" name="email" class="form-control border-0 bg-light" placeholder="tu@mail.com" required>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label small text-muted">Contraseña</label>
+                    <input type="password" name="password" class="form-control border-0 bg-light" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 rounded-pill py-2 fw-medium">Entrar al Sistema</button>
+            </form>
+            <div class="text-center mt-3">
+                <a href="{{ url_for('gestionar_usuarios') }}" class="text-muted small text-decoration-none">¿No tienes cuenta? Regístrate aquí</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
